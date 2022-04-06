@@ -13,11 +13,12 @@ middleware here, or combine a Django application with an application of another
 framework.
 
 """
+
 import os
 
 from django.core.wsgi import get_wsgi_application
 
-PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__) + "../../")
+PROJECT_ROOT = os.path.abspath(f'{os.path.dirname(__file__)}../../')
 
 # Add the app code to the path
 # import sys
